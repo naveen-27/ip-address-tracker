@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Info from './Info';
-// import Map from './Map';
+import Map from './Map';
 import './stylesheets/App.css';
 
 class App extends Component {
@@ -11,12 +11,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ip: '123.12.1.1',
-      location: 'Henan',
-      timezone: '+08:00',
-      isp: 'CNC Group CHINA169 Henan Province Network',
-      latitude: '34.45',
-      longitude: '115.65'
+      ip: '',
+      location: '',
+      timezone: '',
+      isp: '',
+      latitude: '',
+      longitude: ''
     }
     this.applyStateChange = this.applyStateChange.bind(this);
     this.requestInfo = this.requestInfo.bind(this);
@@ -53,11 +53,7 @@ class App extends Component {
           timezone={this.state.timezone}
           reqInfo={this.requestInfo}
         />
-
-        {/* <Map
-          lat={this.state.latitude}
-          lgn={this.state.longitude}
-        /> */}
+        <Map lat={this.state.latitude} lgn={this.state.longitude} />
       </div>
     )
   }

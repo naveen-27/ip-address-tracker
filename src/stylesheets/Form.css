@@ -23,8 +23,8 @@ button {
   color: white;
 }
 
-button:hover {
-  opacity: .8;
+button:not(:disabled):hover {
+  background: rgba(62, 62, 226, 0.815);
 }
 
 button:disabled {
