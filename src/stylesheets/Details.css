@@ -37,3 +37,30 @@
 .Detail + .Detail {
   border-left: 3px solid rgb(211, 205, 205);
 }
+
+@media (max-width: 1200px) {
+  .Detail:first-of-type > .value{
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .Details {
+    flex-direction: column;
+    transform: translateY(20%);
+  }
+
+  .Detail {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .value {
+    font-size: 1.35rem;
+  }
+
+  .Detail + .Detail {
+    border-top: 3px solid rgb(211, 205, 205);
+    border-left: none;
+  }
+}

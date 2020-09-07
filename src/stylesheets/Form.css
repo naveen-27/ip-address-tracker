@@ -31,3 +31,10 @@ button:disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
+
+@media (max-width: 850px) {
+
+  input {
+    width: 80%;
+  }
+}
