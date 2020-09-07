@@ -1,0 +1,39 @@
+.Details {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  width: min(90%, 1100px);
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+  transform: translateY(50%);
+}
+
+.heading {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.value {
+  margin-top: .5rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.Detail {
+  padding: 0 2rem;
+  width: 25%;
+}
+
+.Detail:last-of-type > .value{
+  font-size: 1.35rem;
+}
+
+.Detail + .Detail {
+  border-left: 3px solid rgb(211, 205, 205);
+}
