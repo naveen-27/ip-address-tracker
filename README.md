@@ -23,6 +23,6 @@ This single page application [IP Address Tracker](https://ip-address-tracker-thr
 1. Signup for Ipify API
 1. Install create-react-app CLI
 1. Clone the repository - run ```git clone https://github.com/naveen-27/ip-address-tracker.git```
-1. Run ```npm install``` in a terminal
+1. Run ```npm install```
 1. Store your API keys in a ```.env``` file as specified in ```.env_sample``` file
 1. Then run ```npm start```
