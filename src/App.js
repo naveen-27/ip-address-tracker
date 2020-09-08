@@ -6,7 +6,7 @@ import './stylesheets/App.css';
 
 class App extends Component {
 
-  static REQ_ADDR = 'https://geo.ipify.org/api/v1?apiKey=at_eFRMg40JX7nBOZb9HIhrpEUKlJlDD';
+  static REQ_ADDR = `https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_IP_API_KEY}`;
 
   constructor(props) {
     super(props);
